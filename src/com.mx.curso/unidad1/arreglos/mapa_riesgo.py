@@ -37,7 +37,7 @@ print("---Actualización de matriz de navegación---")
 for i in range(len(matriz)):
     for j in range(len(matriz[i])):
         if matriz[i][j] == 2:
-            matriz[i][j] == 1
+            matriz[i][j] = 1
 
 area_riesgo_actualizada = 0
 area_precuacion_actualizada = 0
