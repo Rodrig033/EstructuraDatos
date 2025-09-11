@@ -40,7 +40,6 @@ print(f"Calificaciones MARTIN: {calificaciones_usuario}")
 
 
 # Arreglo que muestre la calificación más alta y más baja
-# Usare matplotlib y pandas para que mi matriz se vea más ordenada:
 
 df = pd.DataFrame(matriz, columns=columnas)
 print("\n")
