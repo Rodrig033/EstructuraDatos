@@ -1,28 +1,45 @@
-# Matriz que represente la sala de cine con 4 filas y 5 asientos por fila:
-print("\n---- CINEPOLIS - Sala 10 ---- \n")
-sala_cine = [[0, 1, 1, 1, 1],
-             [0, 0, 0, 1, 0],
-             [1, 1, 0, 0, 1],
-             [0, 1, 1, 1, 0]]
+# Ejercicio 3: Sala de asientos de cine con 4 fila y 5 asientos por fila:
 
-# Sala
-for i in sala_cine:
-    print(i)
+sala_cine = [[0,1,0,0,1],
+             [1,1,0,0,0],
+             [0,0,1,0,1],
+             [1,1,1,1,0]]
 
-print("\n0 = Asiento libre")
-print("1 = Asieto ocupado\n")
+columnas = sala_cine[0]
+datos = sala_cine[:-1]
 
-fila = int(input("Ingrese la fila: "))
-asiento = int(input("Ingrese la columna: "))
+for i in range(len(sala_cine)):
+    for j in range(len(sala_cine[i])):
+        print(sala_cine[i][j], end=" ")
+    print()
 
-for i in sala_cine:
-    if sala_cine[fila][asiento] == 1:
-        print("Asiento ocupado")
-
-    else: 
-        sala_cine[fila][asiento] = 1
+print("\n")
+print("    ✧  BIENVENIDO A  ✧")
+print(" ╔════════════════════╗")
+print(" ║      CINEPOLIS     ║")
+print(" ╚════════════════════╝")
+print()
 
 
 
-for i in sala_cine:
-    print(i)
+# El usuario debe elegir su asiento:
+fila = int(input("Eliga la fila: "))
+asiento = int(input("Eliga su asiento: "))
+
+for i in range(len(sala_cine)):
+    for j in range(len(sala_cine[i])):
+       if sala_cine[i][j] == 0:
+           sala_cine[fila][asiento] = 1
+
+while sala_cine[fila][asiento] == 1:
+    print("Este asiento está ocupado...")
+    fila = int(input("Eliga la fila: "))
+    asiento = int(input("Eliga su asiento: "))
+
+sala_cine[fila][asiento] = 1
+
+
+for i in range(len(sala_cine)):
+    for j in range(len(sala_cine[i])):
+        print(sala_cine[i][j], end=" ")
+    print()
