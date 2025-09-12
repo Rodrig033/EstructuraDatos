@@ -57,8 +57,7 @@ for fila in inventario[1:]:
             print(f"No hay suficiente stock. Solo hay {fila[columna_cantidad]} unidades disponibles.")
             ventas = fila[columna_cantidad]  
         total = fila[columna_precio] * ventas
-        if ventas == 10:
-         fila[columna_cantidad] -= ventas
+        fila[columna_cantidad] -= ventas
         break
 
 
