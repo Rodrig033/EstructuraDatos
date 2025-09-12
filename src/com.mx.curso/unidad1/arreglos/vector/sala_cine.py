@@ -23,8 +23,8 @@ print()
 
 
 # El usuario debe elegir su asiento:
-fila = int(input("Eliga la fila: "))
-asiento = int(input("Eliga su asiento: "))
+fila = int(input("Elija la fila: "))
+asiento = int(input("Elija su asiento: "))
 
 for i in range(len(sala_cine)):
     for j in range(len(sala_cine[i])):
@@ -33,8 +33,8 @@ for i in range(len(sala_cine)):
 
 while sala_cine[fila][asiento] == 1:
     print("Este asiento está ocupado...")
-    fila = int(input("Eliga la fila: "))
-    asiento = int(input("Eliga su asiento: "))
+    fila = int(input("Elija la fila: "))
+    asiento = int(input("Elija su asiento: "))
 
 sala_cine[fila][asiento] = 1
 

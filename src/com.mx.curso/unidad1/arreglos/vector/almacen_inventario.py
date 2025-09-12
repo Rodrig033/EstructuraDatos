@@ -65,3 +65,4 @@ for fila in inventario[1:]:
 df = pd.DataFrame(inventario[1:], columns=columnas)
 print("\nInventario actualizado:")
 print(df.to_string(index=False))
+print("Usted pagará: ", total, "Pesos.")
