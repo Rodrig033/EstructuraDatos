@@ -11,9 +11,6 @@ metricas = [
     0.78
 ]
 
-columnas = metricas[0:]
-datos = metricas[0:]
-
 # Agregar precisión:
 
 metricas.append(0.13)
