@@ -11,6 +11,9 @@ metricas = [
     0.78
 ]
 
+columnas = metricas[0:]
+datos = metricas[0:]
+
 # Agregar precisión:
 
 metricas.append(0.13)
@@ -21,3 +24,7 @@ print("Posición final: ",metricas[-1])
 
 # Posición más alta:
 print("Valor maximo: ",max(metricas))
+
+for i in range(len(metricas)):
+    print(metricas[i], end="\n")
+
