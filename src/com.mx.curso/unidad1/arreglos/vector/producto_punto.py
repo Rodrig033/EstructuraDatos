@@ -1,4 +1,4 @@
-#Operación de producto punto (base de las redes neuronales)
+# Operación de producto punto (base de las redes neuronales)
  
 import numpy as np
 import time
