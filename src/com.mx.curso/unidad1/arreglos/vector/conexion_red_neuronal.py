@@ -37,6 +37,6 @@ for peso in range(len(pesos[0])):
 end_time = time.time()
 
 print("\nInicio: ", star_time)
-print(vector)
+print("Vector: ",vector)
 print("Vector final: ",sumar)
 print("Final: ", end_time - star_time)
