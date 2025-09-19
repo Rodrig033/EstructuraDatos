@@ -21,3 +21,7 @@ print("Posición final: ",metricas[-1])
 
 # Posición más alta:
 print("Valor maximo: ",max(metricas))
+
+for i in range(len(metricas)):
+    print(metricas[i], end="\n")
+

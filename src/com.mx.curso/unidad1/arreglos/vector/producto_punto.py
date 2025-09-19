@@ -1,7 +1,7 @@
-#Operación de producto punto (base de las redes neuronales)
+# Operación de producto punto (base de las redes neuronales)
  
 import numpy as np
- 
+import time
 # Vector de entrada (una sola característica de 3 neuronas)
 entrada = np.array([1, 2, 3])
  
@@ -11,9 +11,14 @@ pesos = np.array([
     [0.8, 0.3],
     [0.1, 0.9]
 ])
+
+start_time = time.time()
+salida = np.dot(entrada, pesos)
+end_time = time.time()
  
 # Realizar el producto punto
-salida = np.dot(entrada, pesos)
+print("Inicio : ", start_time)
+print("Tiempos : ", end_time - start_time)
 print("Vector de entrada:", entrada)
 print("Matriz de pesos:\n", pesos)
 print("\nSalida de la capa de neuronas (producto punto):", salida)
