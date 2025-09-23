@@ -1,5 +1,4 @@
 # Entrenamiento de una red neuronal:
-import numpy as np
 import time
 entrada = [1, 2, 5]
 
