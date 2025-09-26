@@ -32,3 +32,4 @@ print(datos)
 datos_limpios = np.delete(datos, 3, 0)
 print("\nDatos limpios: ")
 print(datos_limpios)
+
