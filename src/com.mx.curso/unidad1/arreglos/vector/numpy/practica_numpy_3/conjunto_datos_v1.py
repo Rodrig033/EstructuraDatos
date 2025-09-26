@@ -42,3 +42,6 @@ for i in range(data.shape[0]): # Filas
 
 print("\n----- Valores sin NaN -----")
 print(data)
+
+
+
