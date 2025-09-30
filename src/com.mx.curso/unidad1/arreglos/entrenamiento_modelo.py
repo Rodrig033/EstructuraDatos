@@ -11,8 +11,8 @@ metricas = [
     0.78
 ]
 
-# Agregar precisión:
 
+# Agregar precisión:
 metricas.append(0.13)
 print("Metricas = ",metricas)
 
