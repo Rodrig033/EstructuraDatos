@@ -25,20 +25,24 @@ df = pd.DataFrame(datos, columns=columnas)
 print("\n")
 print(df.to_string(index=False))
 
+
 for fila in calificaciones:
     if fila[0] == "Usuario":
         continue
     else:
-        tenet += fila[1] / 5
-        pianist += fila[2] / 5
-        inception += fila[3] / 5
-        formula += fila[4] / 5
+        tenet += fila[1] 
+        pianist += fila[2] 
+        inception += fila[3] 
+        dune += fila[4] 
+        formula += fila[5] 
 
+usuarios = len(datos)
 print("\nCalificación PROMEDIO por película: ")
-print(calificaciones[0][1], tenet)
-print(calificaciones[0][2], pianist)
-print(calificaciones[0][3], inception)
-print(calificaciones[0][4], formula)
+print("Tenet: ", tenet / usuarios)
+print("The pianist: ", pianist / usuarios)
+print("Inception: ", inception / usuarios)
+print("Dune: ", dune / usuarios)
+print("Formula 1: ", formula / usuarios)
 
 print("\n------ Usuarios ------")
 for usuario in calificaciones:
