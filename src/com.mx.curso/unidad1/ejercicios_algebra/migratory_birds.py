@@ -1,5 +1,6 @@
 # Aves migratorias:
 migratory_birds = [1, 1, 2, 2, 3]
+tipo_pequeño = 0
 type_1 = 0
 type_2 = 0 
 type_3 = 0
@@ -14,5 +15,11 @@ for i in range(len(migratory_birds)):
         type_3 += 1
 
 # Recorrer el arreglo y comparar para conseguir el valor pequeño:
-for i in range(len(migratory_birds)):
-    if i < 
+minima_nota = 0
+for i in enumerate(migratory_birds):
+    nota_min = min(migratory_birds)
+    if nota_min < minima_nota:
+        minima_nota = nota_min
+        type_min = migratory_birds
+
+print(minima_nota)
