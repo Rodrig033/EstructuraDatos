@@ -1,5 +1,4 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 
 
 # Crea una matriz en dónde almacene las calificaciones del usuario (fila) a la película (columna):

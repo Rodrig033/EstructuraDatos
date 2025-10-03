@@ -17,9 +17,9 @@ print(df.to_string(index=False))
 
 # Ingresa las calificaciones por estudiante:
 for i in range(len(datos)):
-    nombre = datos[i][0]
+    nombre = datos[i][0] # Siempre fila cero
     for j in range(1, len(columnas)):
-        examen = columnas[0:][j]
+        examen = columnas[0:][j] # Desde la fila cero e iterando
         calificacion = int(input(f"Ingrese la calificación de {nombre} en el {examen}: "))
         datos[i][j] = calificacion
 
@@ -49,7 +49,7 @@ for i, promedio in enumerate(promedio_examen, start= 1):
     print(f"{columnas[i]}: {promedio:.2f}")
 
 # Calificación más alta:
-maxima_nota = -1
+maxima_nota = 0
 mejor_estudiante = ""
 for i, fila in enumerate(datos):
     nota_max = max(fila[1:])
