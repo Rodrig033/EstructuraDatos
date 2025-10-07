@@ -1,25 +1,32 @@
 # Aves migratorias:
 migratory_birds = [1, 1, 2, 2, 3]
+tipos = []
+repetidos = []
 tipo_pequeño = 0
-type_1 = 0
-type_2 = 0 
-type_3 = 0
 
-# Almacenar todos los tipos:
+# Almacenar solo los tipos:
 for i in range(len(migratory_birds)):
-    if migratory_birds[i] == 1:
-        type_1 += 1
-    elif migratory_birds[i] == 2:
-        type_2 += 1
-    elif migratory_birds[i] == 3:
-        type_3 += 1
+    for j in range(len(migratory_birds)):
+        if i != j:
+            if migratory_birds[i] != migratory_birds[j] and migratory_birds[i] not in tipos:
+                tipos.append(migratory_birds[i])
+
+# Repetidos
+for i in range(len(migratory_birds)):
+    for j in range(len(migratory_birds)):
+        if i != j:
+            if migratory_birds[i] == migratory_birds[j] and migratory_birds[i] not in repetidos:
+                repetidos.append(migratory_birds[i])
 
 # Recorrer el arreglo y comparar para conseguir el valor pequeño:
-minima_nota = 0
-for i in enumerate(migratory_birds):
-    nota_min = min(migratory_birds)
-    if nota_min < minima_nota:
-        minima_nota = nota_min
-        type_min = migratory_birds
+for i in range(len(tipos)):
+    for j in range(len(tipos)):
+        if i != j:
+            if migratory_birds[i] < migratory_birds[j]:
+                tipo_pequeño = migratory_birds[i]
 
-print(minima_nota)
+
+# Valores: 
+print("Tipos de aves: ", tipos)
+print("Repetidos: ",repetidos)
+print("Tipo pequeño: ", tipo_pequeño)
