@@ -1,4 +1,4 @@
-migratory_birds = [1, 1, 2, 2, 3]
+migratory_birds = [1, 4, 4, 4, 5, 3]
 tipos = []
 conteo_repetidos = []
 
@@ -27,4 +27,4 @@ tipo_pequeño = min(tipos_maximos)
 print("Tipos de aves:", tipos)
 print("Conteo de repeticiones:", conteo_repetidos)
 print("Tipos más comunes:", tipos_maximos)
-print("Tipo más pequeño:", tipo_pequeño)
+print("Tipo más pequeño:", tipo_pequeño)  
