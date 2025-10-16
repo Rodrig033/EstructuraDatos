@@ -43,3 +43,4 @@ for i in range(datos_limpios.shape[0]):
 
 print("\n -- Datos sin errores y con NaN remplazados --")
 print(datos_limpios)
+
