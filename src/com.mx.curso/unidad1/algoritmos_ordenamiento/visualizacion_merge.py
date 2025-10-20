@@ -29,7 +29,7 @@ def mergeSort(arr):
     leftHalf = arr[:mid]
     rightHalf = arr[mid:]
 
-    print(f"Dividiendo {arr} -> {leftHalf} y {rightHalf}\n")
+    print(f"Dividiendo {arr} - {leftHalf} y {rightHalf}\n")
 
     sortedLeft = mergeSort(leftHalf)
     sortedRight = mergeSort(rightHalf)
