@@ -1,1 +1,0 @@
-print("Winter is coming")
