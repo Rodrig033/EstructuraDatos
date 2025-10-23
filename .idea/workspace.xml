@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="033f76f2-6f70-4c16-8972-89f512557c2e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com.mx.curso/unidad2/bubblesort_java.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com.mx.curso/unidad2/bubblesort_java.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/com.mx.curso/unidad2/bubblesort_java.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com.mx.curso/unidad2/prueba_reposiorio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/com.mx.curso/unidad2/prueba_reposiorio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
