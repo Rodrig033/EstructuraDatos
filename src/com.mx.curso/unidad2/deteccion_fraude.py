@@ -1,7 +1,7 @@
 # Lista con las puntuaciones de importancia
 alertas = [0.3, 0.87, 0.45, 0.15, 1, 0.21, 0.78, 0.66, 0.33, 1]
 
-print("Características no ordenadas")
+print("Alertas no ordenadas")
 print(alertas)
 
 n=len(alertas)
