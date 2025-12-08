@@ -54,7 +54,7 @@ class ListaDoble:
         while actual is not None:
             print(actual.dato, " <-> ", end= " ")
             actual = actual.anterior
-
+        
         print("None")
 
 
