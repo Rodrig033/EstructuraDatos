@@ -18,7 +18,7 @@ class Fila:
     def esta_vacia(self):
         return len(self.items) == 0
 
-    def tamano(self):
+    def tamaño(self):
         return len(self.items)
 
     def __str__(self):
@@ -33,5 +33,5 @@ f.encolar("C")
 print(f)                
 print(f.desencolar())   
 print(f.frente())       
-print(f.tamano())       
+print(f.tamaño())       
 print(f.esta_vacia())
